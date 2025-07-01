@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página sobre hackers, tipos y grupos destacados">
+    <meta name="author" content="Certamen1">
+    <title>Inicio · Hackers</title>
+    <!-- Bootstrap CSS desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Estilos personalizados -->
+    <link href="carousel.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="icon" href="../assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="../assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <meta name="theme-color" content="#222">
+    <style>
+      nav {
+        background: #222;
+        padding: 10px 0;
+        margin-bottom: 30px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: color 0.2s;
+      }
+      nav ul li a:hover {
+        color: #00bfff;
+      }
+      .card-img-top {
+        object-fit: cover;
+        height: 220px;
+      }
+      .card.bg-dark {
+        background: #222 !important;
+        color: #fff !important;
+      }
+      h1, h2, h3 {
+        color: #fff;
+      }
+      .text-body-secondary {
+        color: #ccc !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Theme toggle -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" aria-hidden="true"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" aria-hidden="true"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- Barra de navegación uniforme -->
+    <nav>
+      <ul>
+        <li><a href="Pagina1.html">Inicio</a></li>
+        <li><a href="Pagina2.html">Errores de Hacker</a></li>
+        <li><a href="pagina3.html">Los más conocidos</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Mundo Hacker: Tipos y Grupos</h1>
+            <p class="lead text-body-secondary">Los hackers son individuos con habilidades avanzadas en informática y redes. Algunos, como los white hats, emplean su conocimiento para defender sistemas. Otros, conocidos como black hats, buscan vulnerar la seguridad con fines ilícitos. También existen los gray hats, que se sitúan en un punto intermedio entre ambos extremos.</p>
+          </div>
+        </div>
+      </section>
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm bg-dark text-white">
+                <img src="imagen/anonops.jpg" class="card-img-top" alt="Anon Ops">
+                <div class="card-body">
+                  <h5 class="card-title">Anon Ops</h5>
+                  <p class="card-text">Colectivo hacktivista que defiende la libertad digital y el acceso abierto a la información en la red.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Actualizado hace 5 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm bg-dark text-white">
+                <img src="imagen/blackhat.jpg" class="card-img-top" alt="Dark Web">
+                <div class="card-body">
+                  <h5 class="card-title">Dark Web</h5>
+                  <p class="card-text">Una zona oculta de Internet donde se intercambian datos, exploits y herramientas de espionaje digital.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Actualizado hace 10 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm bg-dark text-white">
+                <img src="imagen/darkweb.jpg" class="card-img-top" alt="Black Hat">
+                <div class="card-body">
+                  <h5 class="card-title">Black Hat</h5>
+                  <p class="card-text">Especialistas en vulnerar sistemas con propósitos maliciosos o lucrativos. Son responsables de muchas brechas de seguridad globales.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Actualizado hace 20 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm bg-dark text-white">
+                <img src="imagen/Keyloggers.jpg" class="card-img-top" alt="White Hat">
+                <div class="card-body">
+                  <h5 class="card-title">White Hat</h5>
+                  <p class="card-text">Expertos en seguridad informática que protegen redes y sistemas aplicando técnicas de hacking ético.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Actualizado hace 30 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm bg-dark text-white">
+                <img src="imagen/Social Engineering.jpg" class="card-img-top" alt="Social Engineering">
+                <div class="card-body">
+                  <h5 class="card-title">Ingeniería Social</h5>
+                  <p class="card-text">Método de manipulación psicológica para obtener acceso a sistemas a través del engaño a personas, sin necesidad de programar.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Actualizado hace 45 minutos</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm bg-dark text-white">
+                <img src="imagen/wite.png" class="card-img-top" alt="Keyloggers">
+                <div class="card-body">
+                  <h5 class="card-title">Keyloggers</h5>
+                  <p class="card-text">Software malicioso que registra cada pulsación del teclado para capturar contraseñas e información confidencial.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Actualizado hace 1 hora</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-body-secondary py-5 bg-dark mt-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#" class="text-white">Volver arriba</a>
+        </p>
+        <p class="mb-1">Sitio de hackers &copy; Certamen1. ¡Personaliza y usa este contenido para tus proyectos!</p>
+        <p class="mb-0">¿Nuevo en ciberseguridad? <a href="/" class="text-info">Visita la página principal</a> o revisa la <a href="../getting-started/introduction/" class="text-info">guía de introducción</a>.</p>
+      </div>
+    </footer>
+    <!-- Scripts de Bootstrap al final -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

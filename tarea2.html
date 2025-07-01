@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a HTML y Python</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #181c24; color: #f0f0f0; margin: 0; padding: 20px; }
+        nav {
+            background: #222;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #00bfff;
+        }
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { color: #00bfff; }
+        h2 { color: #00bfff; border-bottom: 1px solid #00bfff; }
+        section, article, aside { background: rgba(255,255,255,0.05); padding: 20px; margin: 20px 0; border-radius: 10px; }
+        img { max-width: 100%; border-radius: 8px; margin: 10px 0; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { padding: 10px; border-bottom: 1px solid #00bfff; }
+        th { background: rgba(0,191,255,0.2); }
+        ul { list-style: disc inside; }
+        form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; }
+        input, button { padding: 8px; border-radius: 5px; }
+        input { border: 2px solid #00bfff; background: #222; color: #fff; }
+        button { background: #00bfff; color: #fff; border: none; cursor: pointer; }
+        video { width: 100%; max-width: 600px; border-radius: 8px; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="tarea1.html">Currículum</a></li>
+            <li><a href="tarea2.html">HTML y Python</a></li>
+            <li><a href="pagina3.html">Hackers</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Introducción a HTML y Python</h1>
+        <p>Explora los conceptos básicos de HTML y Python con ejemplos visuales.</p>
+        <img src="imagen/html.jpg" alt="HTML" style="max-width: 120px;">
+        <img src="img/Python.png" alt="Python" style="max-width: 120px;">
+    </header>
+    <main>
+        <section>
+            <h2>1. ¿Qué es HTML?</h2>
+            <p>
+                HTML (Lenguaje de Marcado de Hipertexto) es el estándar para crear páginas web. Permite estructurar el contenido y definir elementos como títulos, párrafos, imágenes y enlaces.
+            </p>
+            <img src="img/HTML.png" alt="Ejemplo de HTML" style="height: 120px;">
+        </section>
+        <section>
+            <h2>2. ¿Qué es Python?</h2>
+            <p>
+                Python es un lenguaje de programación potente y fácil de aprender, ampliamente usado en ciencia, web, automatización y más.
+            </p>
+            <img src="img/Python.png" alt="Logo de Python" style="height: 120px;">
+        </section>
+        <article>
+            <h3>Ejemplo de Código en Python</h3>
+            <pre>
+def hola_mundo():
+    print("¡Hola Mundo!")
+            </pre>
+            <img src="img/Ejemplo de Código en Python.jpg" alt="Ejemplo de código Python">
+        </article>
+        <section>
+            <h2>3. Enlaces útiles</h2>
+            <p>Para crear enlaces en HTML, se utiliza la etiqueta <code>&lt;a&gt;</code>:</p>
+            <a href="https://www.python.org" target="_blank">Visita la documentación oficial de Python aquí</a>
+            <img src="img/Link-Within-a-Page-Using-HTML-Step-8.jpg" alt="Ejemplo de enlaces en HTML">
+        </section>
+        <section>
+            <h2>4. Listas en HTML</h2>
+            <p>Temas importantes de Python:</p>
+            <ul>
+                <li>Variables y Tipos de Datos</li>
+                <li>Estructuras de Control</li>
+                <li>Funciones</li>
+                <li>Clases y Objetos</li>
+            </ul>
+            <img src="img/images.jpg" alt="Ejemplo de listas en HTML" style="height: 120px;">
+        </section>
+        <aside>
+            <h2>Información Extra</h2>
+            <p>Consulta tutoriales, foros y recursos adicionales para profundizar en HTML y Python.</p>
+            <img src="img/Como-ser-hacker-y-que-estudios-se-necesitan1.jpg" alt="Información extra">
+        </aside>
+        <section>
+            <h2>5. Tablas en Python</h2>
+            <p>Funciones matemáticas comunes:</p>
+            <table>
+                <tr>
+                    <th>Función</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><code>abs(x)</code></td>
+                    <td>Devuelve el valor absoluto de x</td>
+                </tr>
+                <tr>
+                    <td><code>pow(x, y)</code></td>
+                    <td>Calcula x elevado a la potencia y</td>
+                </tr>
+                <tr>
+                    <td><code>round(x)</code></td>
+                    <td>Redondea x al entero más cercano</td>
+                </tr>
+            </table>
+            <img src="img/Tablas en Python.png" alt="Ejemplo de tabla en HTML" style="height: 120px;">
+        </section>
+        <section>
+            <h2>6. Formularios</h2>
+            <p>Los formularios permiten a los usuarios enviar información:</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Enviar</button>
+            </form>
+            <img src="img/Formularios.svg" alt="Ejemplo de formulario en HTML" style="height: 120px;">
+        </section>
+    </main>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            if (nombre && email) {
+                alert(`¡Gracias ${nombre}! Te contactaremos en ${email}.`);
+                this.reset();
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        });
+    </script>
+</body>
+</html> 
